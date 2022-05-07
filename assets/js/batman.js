@@ -228,3 +228,38 @@ window.addEventListener('scroll', () => {
     AnimScroll(para, 'slidets')
     AnimScroll(image, 'slider')
 })
+
+
+
+/* MENU DEROULANT **********************************/
+
+$(document).ready(function() {
+
+    const $menu = $(".menu .content"),
+        $menuBtn = $(".menu-btn"),
+        $menuList = $(".list");
+    const $optionsList = [
+        "Une fois par semaine",
+        "Une fois toutrs les deux semaine (2 fois par mois)",
+        "Une fois par mois ",
+        "Une fois touts les trois mois ",
+        "Une fois tous les six mois"
+    ];
+
+    function addOptions(selectedOption) {
+        $menuList.text("");
+        $optionsList.forEach(option => {
+            let isSelected = option == selectedOption ? "selected" : "";
+            let $li = `<li onclick="updateSelected(this)" class="${isSelected}">${option}</li>`;
+            $($li).appendTo($menuList);
+        });
+    }
+    addOptions();
+
+    updateSelected = function(selectedLi) {
+        addOptions($(selectedLi).text());
+        $menu.slideToggle(500);
+        $($menuBtn).find(":first-child").text($(selectedLi).text())
+    }
+    $menuBtn.on("click", () => $menu.slideToggle(500));
+});

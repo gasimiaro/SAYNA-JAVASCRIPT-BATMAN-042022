@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>game</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link rel="stylesheet" href="assets/css/games.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -20,10 +21,14 @@
 </head>
 
 <body>
+    <!-- les lignes blancs du pages -->
+    <div class="ligne-haut"></div>
+    <div class="ligne-gauche"></div>
+    <div class="ligne-droite"></div>
     <!---premier section du page game-->
     <section class="section" id="main">
         <!---nav du premier section du page game-->
-        <nav class="navbar navbar-light border border-light border-top-0 border-1">
+        <nav class="navbar ">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="/Assets/Logos/logohome.svg" alt="" width="150" height="40">
@@ -32,60 +37,235 @@
                     <li class="nav-item ">
                         <a class="nav-link " href="index.html">Home</a>
                     </li>
-                    <li class="nav-item text-decoration-underline fw-bold" ">
-                            <a class="nav-link " href="# ">game</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <!--- corp du premier section du page game-->
-            <div class="container text-center border border-light border-top-0 border-1 border-bottom-0 ">
-                
-                <h1 class="firs fw-bold more text-uppercase display-4 text-start "> let play <br> a little game... </h1>
-               
-                <div id="sect ">
-                    <img src="assets/Logos/flèche_down_header.png " alt=" ">
-                    <div class="fleche d-flex flex-column gap-5 align-items-center ">
-                        <a href="#main "><img style="width: 70%; " src="assets/Logos/logo_bat_flèche.png " alt=" "></a>
-                        <a href=" "><img style="width: 100%; " src="assets/Logos/icon_facebook.png " alt=" "></a>
-                        <a href=" "> <img style="width: 100%; " src="assets/Logos/icon_ig.png " alt=" "></a>
-                        <a href=" "> <img  style="width: 100%; " src="assets/Logos/icon_tw.png " alt=" "></a>
-                        <a href="#footer "><img style="width: 70%; " src="assets/Logos/logo_bat_flèche_2.png " alt=" "></a>
-                    </div>
-                </div>
+                    <li class="nav-item text-decoration-underline fw-bold">
+                        <a class="nav-link " href="# ">game</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--- corp du premier section du page game-->
+        <div class="container text-center  ">
 
-            </div>
-        </section>
+            <h1 class="firs fw-bold more text-uppercase display-4 text-start "> let play <br> a little game... </h1>
 
-        <!--- section 2-->
-        <section class="sept text-center ">
-            <div class="dive ">
-                <h1 class="text-uppercase text-center h2 ">Quiz niveau 2 : connaissez vous bien le chevalier noir ?</h1>
-                <img src="assets/Illustrations/Game/Batgame2.png " class="img-fluid ">
-                <button id="btns " class="btn submit text-uppercase moves ">demmarer le quizz</button>
-            </div>
-        </section>
-<!--foter-->
-        <footer id="footer ">
-                      <!-- wb-->
-            <div class="text-center ">
-                <div class="container-fluid ">
-                    <div class="more ">
-                        <img src="Assets/Logos/icon_WB.png " alt=" " width="30 " height="24 " class="d-inline-block align-text-top "> Ce projet respecte l'univers cinematographique des film Batman recents. Version Nolan & Snyder & Reevers
-                    </div>
+            <div id="sect ">
+                <img src="assets/Logos/flèche_down_header.png " alt=" ">
+                <div class="fleche d-flex flex-column gap-5 align-items-center ">
+                    <a href="#main "><img style="width: 70%; " src="assets/Logos/logo_bat_flèche.png " alt=" "></a>
+                    <a href=" "><img style="width: 100%; " src="assets/Logos/icon_facebook.png " alt=" "></a>
+                    <a href=" "> <img style="width: 100%; " src="assets/Logos/icon_ig.png " alt=" "></a>
+                    <a href=" "> <img style="width: 100%; " src="assets/Logos/icon_tw.png " alt=" "></a>
+                    <a href="#footer "><img style="width: 70%; " src="assets/Logos/logo_bat_flèche_2.png " alt=" "></a>
                 </div>
             </div>
-            <!--icon-->
-            <div class="py-5 text-center gap-5 more ">
-                <img  style="width: 3%; " src="assets/Logos/logo_sayna_white.png " alt=" ">
-                <img class="ps-3 " style="width: 3%; " src="assets/Logos/icon_x.png " alt=" ">
-                <img class="ps-3 " style="width: 5%; " src="assets/Logos/icon_DC.svg " alt=" ">
-                <a href=" "><img class="ps-3 " style="width: 3%; " src="assets/Logos/icon_facebook.png " alt=" "></a>
-                <a href=" "> <img class="ps-3 " style="width: 3%; " src="assets/Logos/icon_ig.png " alt=" "></a>
-                <a href=" "> <img class="ps-3 " style="width: 3%; " src="assets/Logos/icon_tw.png " alt=" "></a>
+
+        </div>
+    </section>
+
+
+
+    <section class="container quiz-sec">
+        <h2> QUIZ NIVEAU 1</h2>
+        <div class="quiz-container ">
+            <div class="quiz-title ">Quel est l’autre nom de l’Homme-Mystère ?</div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Le Sphinx</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Saphir</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Le Joker</label></div>
+        </div>
+
+
+        <div class="quiz-container ">
+            <div class="quiz-title ">Quelle est l’ancienne profession de Harley Quinn </div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Infirmière</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Psychiatre</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Dentiste</label></div>
+        </div>
+
+
+        <div class="quiz-container ">
+            <div class="quiz-title ">Quel est l’objet fétiche de Double Face ?</div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Une pièce</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Un livre</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Un couteau</label></div>
+        </div>
+
+
+        <div class="quiz-container ">
+            <div class="quiz-title ">Quelle ville Batman défend-il ?</div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Gotham City</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Starling City</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Hell’s Kitchen</label></div>
+        </div>
+
+
+        <div class="quiz-container ">
+            <div class="quiz-title ">Tim Burtin a réalisé deux Batman, qui jouait Batman </div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Georges Clooney</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Val Kilmer</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Mickael Keaton</label></div>
+        </div>
+
+
+        <div class="quiz-container ">
+            <div class="quiz-title ">Dans son premier Batman (1989) Jack Nicholson jouait :</div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Le Pingouin</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>L’Homme Mystère</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Le Joker</label></div>
+        </div>
+
+
+        <div class="quiz-container ">
+            <div class="quiz-title ">Quel est le prénom des parents du jeune Bruce Wayne ?</div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Thomas et Martha</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Elaine et Georges</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Martha et James</label></div>
+        </div>
+
+
+
+        <div class="quiz-container ">
+            <div class="quiz-title ">Qui interprète le Joker en 2008 ?</div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Heath Legder</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Haeth Ledger</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Heath Ledger</label></div>
+        </div>
+
+
+        <div class="quiz-container ">
+            <div class="quiz-title ">En quelle année Robin fait il sa première apparition </div>
+            <div class="qcm ">
+                <input type="checkbox "><label>1940</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>1936</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>1941</label></div>
+        </div>
+
+
+        <div class="quiz-container ">
+            <div class="quiz-title ">Qui est la fille de Batman et Catwoman (Earth - 2) ?</div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Oracle</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Huntress</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Black Canary</label></div>
+        </div>
+
+
+        <div class="quiz-container ">
+            <div class="quiz-title ">Qui est Jonathan Crane ?</div>
+            <div class="qcm ">
+                <input type="checkbox "><label>L’Épouvantail</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Le Joker</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Hugo Strange</label></div>
+        </div>
+
+
+        <div class="quiz-container ">
+            <div class="quiz-title ">Batman c’est aussi le nom d’une ville en...</div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Turquie</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Islande</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Allemagne</label></div>
+        </div>
+
+
+        <div class="quiz-container ">
+            <div class="quiz-title ">Qui a produit Batman en 1964 </div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Stanley Kubrick</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Andy Warhol</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Peter Jackson</label></div>
+        </div>
+
+
+        <div class="quiz-container ">
+            <div class="quiz-title ">Quel vilain apparaît pour la première fois dans le Batman 232 ?</div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Ra’s al Ghul</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Poison Ivy</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Emma Watson</label></div>
+        </div>
+
+
+        <div class="quiz-container ">
+            <div class="quiz-title ">
+                Qui est l’interprète de Catwoman dans le nouveau Batman de Matt Reeves (2022) ?
             </div>
-        </footer>
-        
-    </body>
-   
+            <div class="qcm ">
+                <input type="checkbox "><label>Gigi Hadid</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Lola Iolani Momoa</label></div>
+            <div class="qcm ">
+                <input type="checkbox "><label>Zoë Kravitz</label></div>
+        </div>
+    </section>
+
+    <!--- section 2-->
+    <section class="sept text-center ">
+        <div class="dive ">
+            <h1 class="text-uppercase text-center h2 ">Quiz niveau 2 : connaissez vous bien le chevalier noir ?</h1>
+            <img src="assets/Illustrations/Game/Batgame2.png " class="img-fluid ">
+            <button id="btns " class="btn submit text-uppercase moves ">demmarer le quizz</button>
+        </div>
+    </section>
+    <!--foter-->
+    <footer>
+        <!-- wb-->
+        <div class="text-center ">
+            <div class="container-fluid ">
+                <div class="more ">
+                    <img src="Assets/Logos/icon_WB.png " alt=" " width="30 " height="24 " class="d-inline-block align-text-top "> Ce projet respecte l'univers cinematographique des film Batman recents. Version Nolan & Snyder & Reevers
+                </div>
+            </div>
+        </div>
+        <!--icon-->
+        <div class="py-5 text-center gap-5 more " id="footer">
+            <img style="width: 3%; " src="assets/Logos/logo_sayna_white.png " alt=" ">
+            <img class="ps-3 " style="width: 3%; " src="assets/Logos/icon_x.png " alt=" ">
+            <img class="ps-3 " style="width: 5%; " src="assets/Logos/icon_DC.svg " alt=" ">
+            <a href=" "><img class="ps-3 " style="width: 3%; " src="assets/Logos/icon_facebook.png " alt=" "></a>
+            <a href=" "> <img class="ps-3 " style="width: 3%; " src="assets/Logos/icon_ig.png " alt=" "></a>
+            <a href=" "> <img class="ps-3 " style="width: 3%; " src="assets/Logos/icon_tw.png " alt=" "></a>
+        </div>
+    </footer>
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="assets/js/batman.js "></script>
+
+</body>
+
 </html>

@@ -17,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
@@ -306,12 +308,17 @@
                         </label>
                         <input class="form-check-input order-2 " type="checkbox " id="gridCheck ">
                     </div>
-                    <select class="form-select border-top-0 border-end-0 border-start-0 bg-transparent more" aria-label="Default select example ">
-                        <option  selected>Choisissez la frequance a la quelle vous souhaitez recevoir votre newslwtter selected</option>
-                        <option value="1 ">One</option>
-                        <option value="2 ">Two</option>
-                        <option value="3 ">Three</option>
-                      </select>
+                    <!-- menu deroulant -->
+                    <div class="menu">
+                        <div class="menu-btn">
+                            <span>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
+                            <span class="icon"><img src="assets/Logos/Icones en + dans Home/icon_flèche_2.png" alt=""></span>
+                        </div>
+                        <div class="content">
+                            <ul class="list"></ul>
+                        </div>
+                    </div>
+                    <!-- ........................... -->
                     <input type="# " class="more form-control mt-5 border-top-0 border-end-0 border-start-0 bg-transparent " id="exa " placeholder="Souhaitez vous recevoir des news " aria-describedby="emailHelp " disabled>
                     <div class="btn-group mob gap-5 more" role="group" aria-label="Basic example">
                         <button type="button" class="btn border  text-light">Des films</button>
@@ -467,6 +474,6 @@
         </div>
     </footer>
 </body>
-<script src="batman.js "></script>
+<script src="assets/js/batman.js "></script>
 
 </html>

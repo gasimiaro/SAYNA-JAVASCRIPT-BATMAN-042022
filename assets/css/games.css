@@ -11,6 +11,39 @@
     ---redo-ad-color: #890008;
 }
 
+
+/* les lignes blancs du sites */
+
+.ligne-haut {
+    position: absolute;
+    left: 102px;
+    top: 130px;
+    width: 80.5%;
+    margin-left: 2.2%;
+    margin-right: 2.2%;
+    border-top: 2px solid rgba(188, 188, 188, 0.5);
+    z-index: 3;
+}
+
+.ligne-gauche,
+.ligne-droite {
+    position: absolute;
+    border-left: 2px solid rgba(188, 188, 188, 0.5);
+    height: 710vh;
+    z-index: 3;
+}
+
+.ligne-gauche {
+    left: 130px;
+}
+
+.ligne-droite {
+    right: 130px;
+}
+
+
+/******************/
+
 body {
     margin: 0;
     color: var(--white-ad-color);
@@ -62,8 +95,9 @@ button {
 
 .fleche {
     position: fixed;
-    top: 50%;
-    left: 85.9%;
+    top: 25%;
+    right: 78px;
+    z-index: 100;
 }
 
 .dive {
@@ -78,10 +112,48 @@ button {
     background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.6) 0%, hsla(0, 100%, 50%, 0.2) 100%);
     padding: 2% 8%;
     border: none;
+    font-size: 18px;
 }
 
 .img-fluid {
     padding: 5% 0;
     width: 80%;
     margin: 0 5%;
+}
+
+
+/* quiz */
+
+.quiz-sec {
+    margin-left: 200px;
+}
+
+section.container {
+    color: var(--white-ad-color);
+}
+
+.quiz-container {
+    margin-top: 2rem;
+}
+
+.quiz-title {
+    font-size: 22px;
+}
+
+.qcm {
+    background-color: var(---gris-ad-color);
+    font-size: 18px;
+    width: 40%;
+    padding: 5px 10px;
+    margin-top: 5px;
+}
+
+.qcm:hover {
+    background-color: var( --primary-ad-color);
+}
+
+.qcm input {
+    width: 22px;
+    height: 22px;
+    margin-right: 22px;
 }
