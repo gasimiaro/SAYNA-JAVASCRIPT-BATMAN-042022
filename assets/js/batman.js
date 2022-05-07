@@ -86,6 +86,7 @@ all_button.forEach(button => {
         button.style.opacity = "100%";
         button.style.transform = "scale(1.1)";
         button.style.color = "white"
+        button.style.background = "linear-gradient(135deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4) 60%)"
     })
 });
 
@@ -93,6 +94,7 @@ all_button.forEach(button => {
     button.addEventListener("mouseout", () => {
         button.style.opacity = "100%";
         button.style.transform = "scale(1)";
+        button.style.background = "linear-gradient(90deg, hsla(0, 0%, 100%, 0.6) 0%, hsla(0, 100%, 50%, 0.2) 100%)"
     })
 });
 
@@ -177,14 +179,14 @@ function showSlidest() {
     }
     slidea[slideIndext - 1].style.display = "block";
     dots[slideIndext - 1].className += " active";
-    setTimeout(showSlidest, 2000); // Change image every 2 seconds
+    setTimeout(showSlidest, 3000); // Change image every 2 seconds
 }
 
 //choix et cliquer les button
 let choix = document.querySelectorAll(".mob button")
 choix.forEach(bit => {
     bit.addEventListener("mouseover", () => {
-        bit.style.background = " linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1)";
+        bit.style.background = "#890008 ";
 
     })
 });
@@ -263,3 +265,15 @@ $(document).ready(function() {
     }
     $menuBtn.on("click", () => $menu.slideToggle(500));
 });
+
+//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+// social media hover
+$('.mediahover').on({
+    mouseenter: function() {
+        $(this).css('color', '#19587d')
+    },
+    mouseleave: function() {
+        $(this).css('color', 'white')
+    }
+})
